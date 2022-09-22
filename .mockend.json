@@ -8,6 +8,9 @@
         },
         "image": {
             "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/1080"
+        },
+        "products": {
+            "hasMany": "Product"
         }
     },
     "Brand": {
@@ -16,6 +19,9 @@
         },
         "image": {
             "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/1080"
+        },
+        "products": {
+            "hasMany": "Product"
         }
     },
     "Product": {
@@ -38,10 +44,10 @@
             }
         },
         "category": {
-            "hasMany": "Category"
+            "belongsTo": "Category"
         },
         "brand": {
-            "hasMany": "Brand"
+            "belongsTo": "Brand"
         }
     }
 }
