@@ -1,7 +1,47 @@
 {
-    "User": {
+    "Category": {
+        "slug": {
+            "regexp": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
         "title": {
             "string": {}
+        },
+        "image": {
+            "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/1080"
+        }
+    },
+    "Brand": {
+        "title": {
+            "string": {}
+        },
+        "image": {
+            "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/1080"
+        }
+    },
+    "Product": {
+        "title": {
+            "string": {}
+        },
+        "price": {
+            "int": {
+                "min": 20,
+                "max": 1000
+            }
+        },
+        "image": {
+            "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/1080"
+        },
+        "description": {
+            "loremParagraphs": {
+                "minLength": 200,
+                "maxLength": 500
+            }
+        },
+        "category_id": {
+            "belongsTo": "Category"
+        },
+        "brand_id": {
+            "belongsTo": "Brand"
         }
     }
 }
