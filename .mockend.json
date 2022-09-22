@@ -38,10 +38,10 @@
             }
         },
         "category": {
-            "belongsTo": "Category"
+            "hasMany": "Category"
         },
         "brand": {
-            "belongsTo": "Brand"
+            "hasMany": "Brand"
         }
     }
 }
