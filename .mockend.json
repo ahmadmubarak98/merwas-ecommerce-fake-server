@@ -28,6 +28,9 @@
         "title": {
             "string": {}
         },
+        "name": {
+            "string": {}
+        },
         "price": {
             "int": {
                 "min": 20,
