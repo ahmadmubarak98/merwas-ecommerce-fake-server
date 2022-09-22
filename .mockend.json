@@ -37,10 +37,10 @@
                 "maxLength": 500
             }
         },
-        "category_id": {
+        "category": {
             "belongsTo": "Category"
         },
-        "brand_id": {
+        "brand": {
             "belongsTo": "Brand"
         }
     }
